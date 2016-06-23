@@ -1,5 +1,5 @@
 {
-  "name": "node-postres-todo",
+  "name": "postgisapp",
   "version": "0.0.0",
   "private": true,
   "scripts": {
