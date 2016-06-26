@@ -1,6 +1,27 @@
 # postgisapp
 Pruebas con Postgres, Postgis y node.js
 
+Instalación:
+------------
+Una vez hecho el clone del repo
+git clone https://github.com/carpoolinguca/postgisapp.git
+
+Se necesita tener instalado:
+npm install supervisor -g
+
+dentro de la carpeta postgisapp ejecutar
+npm install
+
+Se necesita tener creada la base de datos de viajes.
+Nos logueamos como usuario postgres
+su postgres
+
+Desde el usuario de postgres ejecutamos:
+createdb -O carpooling -E UTF8 viajes
+
+API REST
+--------
+
 GET todas las rutas
 http://localhost:3000/api/v1/todos
 

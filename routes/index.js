@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var path = require('path');
 
 var pgcrud = require('./pgcrud.js');
 
@@ -34,4 +35,9 @@ router.delete('/api/v1/todos/:todo_id', function(req, res) {
     pgcrud.delete(id,res);
 
 });
+
+router.get('/', function(req, res, next) {
+  res.sendFile(path.join(__dirname, '../views', 'index.html'));
+});
+
 module.exports = router;
